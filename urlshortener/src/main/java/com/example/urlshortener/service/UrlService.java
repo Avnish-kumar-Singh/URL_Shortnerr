@@ -1,11 +1,13 @@
 package com.example.urlshortener.service;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
 import com.example.urlshortener.model.UrlMapping;
 import com.example.urlshortener.repository.UrlRepository;
+//import com.example.urlshortener.model.UrlMapping;
 
 @Service
 public class UrlService {
@@ -43,4 +45,17 @@ public class UrlService {
 
         return null;
     }
+
+public List<UrlMapping> getAllUrls() {
+    return repository.findAll();
+}
+
+public List<UrlMapping> searchUrls(String keyword) {
+    return repository.findByOriginalUrlContaining(keyword);
+}
+
+public void deleteUrl(Long id) {
+    repository.deleteById(id);
+}
+
 }
