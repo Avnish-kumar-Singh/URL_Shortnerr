@@ -1,0 +1,265 @@
+2026-06-01T09:01:22.3136670Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T09:01:28.5427272Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T09:01:28.5523934Z Container start method called.
+2026-06-01T09:01:28.7203040Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:01:28.7205568Z Establishing network.
+2026-06-01T09:01:28.7209797Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T09:02:02.3998495Z Image azure-app-service/java:17.0.17-r260110 is pulled from registry 10.1.0.4:13209
+2026-06-01T09:02:02.4973261Z Container is starting.
+2026-06-01T09:02:02.4984680Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:02:02.5000503Z Establishing user namespace if not established already.
+2026-06-01T09:02:02.5161579Z Establishing network if not established already.
+2026-06-01T09:02:02.5167777Z Mounting volumes.
+2026-06-01T09:02:02.5567308Z Nested mountpoint 
+2026-06-01T09:02:02.7141893Z Nested mountpoint volatile/logs
+2026-06-01T09:02:03.0203309Z Nested mountpoint 
+2026-06-01T09:02:03.2366409Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T09:02:03.2475136Z Creating container.
+2026-06-01T09:02:03.2571889Z Creating pipes for streaming container io.
+2026-06-01T09:02:03.2758796Z Creating stdout named pipe at /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stdout_cb64193c135e42648e4de0d7c3c59806.
+2026-06-01T09:02:03.3796074Z Successfully created stdout named pipe at: /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stdout_cb64193c135e42648e4de0d7c3c59806.
+2026-06-01T09:02:03.3821931Z Opening named pipe /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stdout_cb64193c135e42648e4de0d7c3c59806 for reading in non-blocking mode.
+2026-06-01T09:02:03.4099509Z Successfully opened named pipe: /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stdout_cb64193c135e42648e4de0d7c3c59806.
+2026-06-01T09:02:03.4370795Z Successfully removed non-blocking flag from /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stdout_cb64193c135e42648e4de0d7c3c59806.
+2026-06-01T09:02:03.4488962Z Creating stderr named pipe at /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stderr_5343e323cef046f888a6e057c35cd349.
+2026-06-01T09:02:03.4491618Z Successfully created stderr named pipe at: /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stderr_5343e323cef046f888a6e057c35cd349.
+2026-06-01T09:02:03.4587528Z Opening named pipe /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stderr_5343e323cef046f888a6e057c35cd349 for reading in non-blocking mode.
+2026-06-01T09:02:03.4773462Z Successfully opened named pipe: /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stderr_5343e323cef046f888a6e057c35cd349.
+2026-06-01T09:02:03.4775525Z Successfully removed non-blocking flag from /podr/container/pipe/08b4b8e1ccf9_urls-backend-app/stderr_5343e323cef046f888a6e057c35cd349.
+2026-06-01T09:02:03.5332804Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T09:02:10.0427943Z Starting container: 08b4b8e1ccf9_urls-backend-app.
+2026-06-01T09:02:11.3512428Z Starting watchers and probes.
+2026-06-01T09:02:11.5611962Z Starting metrics collection.
+2026-06-01T09:02:11.6985390Z Container is running.
+2026-06-01T09:02:11.6993308Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:02:13.8404213Z Container start method finished after 45276 ms.
+2026-06-01T09:02:13.8604351Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:02:14.2261523Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T09:02:35.3489218Z Container has finished running with exit code: 0.
+2026-06-01T09:02:35.3870106Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T09:02:35.4138530Z Stop and delete container. Retry count = 0
+2026-06-01T09:02:35.4152518Z Stopping container: 08b4b8e1ccf9_urls-backend-app.
+2026-06-01T09:02:35.6926182Z Deleting container: 08b4b8e1ccf9_urls-backend-app. Retry count = 0
+2026-06-01T09:02:36.3675295Z Container spec TerminationMessagePolicy  path 
+2026-06-01T09:02:36.3686820Z Container is terminated. Total time elapsed: 980 ms.
+2026-06-01T09:02:36.3688464Z Site container: urls-backend-app terminated during site startup.
+2026-06-01T09:02:36.3689321Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:02:36.4992893Z Site startup probe failed after 21.7820182 seconds.
+2026-06-01T09:02:37.3980100Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:02:37.5847891Z Failed to start site. Revert by stopping site.
+2026-06-01T09:02:37.6241155Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:02:37.6818539Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:02:37.6833459Z Site: urls-backend-app stopped.
+2026-06-01T09:02:37.8257672Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:02:38.4824318Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:02:39.5072540Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 09:02:39 (UTC), DetailsLevel: ERR
+2026-06-01T09:02:40.8271282Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 09:02:39 (UTC), DetailsLevel: ERR
+2026-06-01T09:03:17.8694060Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 09:02:39 (UTC), DetailsLevel: ERR
+2026-06-01T09:03:21.2956842Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 09:02:39 (UTC), DetailsLevel: ERR
+2026-06-01T09:03:21.4361006Z Container start method called.
+2026-06-01T09:03:21.4361733Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:03:21.4363062Z Establishing network.
+2026-06-01T09:03:21.4364564Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T09:03:22.9148255Z Container is starting.
+2026-06-01T09:03:22.9149488Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:03:22.9150600Z Establishing user namespace if not established already.
+2026-06-01T09:03:22.9151737Z Establishing network if not established already.
+2026-06-01T09:03:22.9152997Z Mounting volumes.
+2026-06-01T09:03:22.9166933Z Nested mountpoint 
+2026-06-01T09:03:22.9532833Z Nested mountpoint volatile/logs
+2026-06-01T09:03:23.0896212Z Nested mountpoint 
+2026-06-01T09:03:23.2589006Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T09:03:23.2592583Z Creating container.
+2026-06-01T09:03:23.3075424Z Creating pipes for streaming container io.
+2026-06-01T09:03:23.3078398Z Creating stdout named pipe at /podr/container/pipe/cf08c31bd777_urls-backend-app/stdout_8959abbd1aa54b5faf7686a4b2895c38.
+2026-06-01T09:03:23.3104655Z Successfully created stdout named pipe at: /podr/container/pipe/cf08c31bd777_urls-backend-app/stdout_8959abbd1aa54b5faf7686a4b2895c38.
+2026-06-01T09:03:23.3487308Z Opening named pipe /podr/container/pipe/cf08c31bd777_urls-backend-app/stdout_8959abbd1aa54b5faf7686a4b2895c38 for reading in non-blocking mode.
+2026-06-01T09:03:23.3492168Z Successfully opened named pipe: /podr/container/pipe/cf08c31bd777_urls-backend-app/stdout_8959abbd1aa54b5faf7686a4b2895c38.
+2026-06-01T09:03:23.3653527Z Successfully removed non-blocking flag from /podr/container/pipe/cf08c31bd777_urls-backend-app/stdout_8959abbd1aa54b5faf7686a4b2895c38.
+2026-06-01T09:03:23.3687582Z Creating stderr named pipe at /podr/container/pipe/cf08c31bd777_urls-backend-app/stderr_b772119635014664a2894a363d6800be.
+2026-06-01T09:03:23.3949771Z Successfully created stderr named pipe at: /podr/container/pipe/cf08c31bd777_urls-backend-app/stderr_b772119635014664a2894a363d6800be.
+2026-06-01T09:03:23.3968256Z Opening named pipe /podr/container/pipe/cf08c31bd777_urls-backend-app/stderr_b772119635014664a2894a363d6800be for reading in non-blocking mode.
+2026-06-01T09:03:23.3976216Z Successfully opened named pipe: /podr/container/pipe/cf08c31bd777_urls-backend-app/stderr_b772119635014664a2894a363d6800be.
+2026-06-01T09:03:23.3982548Z Successfully removed non-blocking flag from /podr/container/pipe/cf08c31bd777_urls-backend-app/stderr_b772119635014664a2894a363d6800be.
+2026-06-01T09:03:23.3986225Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T09:03:24.2811748Z Starting container: cf08c31bd777_urls-backend-app.
+2026-06-01T09:03:24.4419684Z Starting watchers and probes.
+2026-06-01T09:03:24.4777546Z Starting metrics collection.
+2026-06-01T09:03:24.4793814Z Container is running.
+2026-06-01T09:03:24.4871679Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:03:24.8718321Z Container start method finished after 3424 ms.
+2026-06-01T09:03:24.8721512Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:03:24.8721843Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T09:03:37.7261052Z Container has finished running with exit code: 0.
+2026-06-01T09:03:37.7263419Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T09:03:37.7277722Z Stop and delete container. Retry count = 0
+2026-06-01T09:03:37.7285024Z Stopping container: cf08c31bd777_urls-backend-app.
+2026-06-01T09:03:37.8318081Z Deleting container: cf08c31bd777_urls-backend-app. Retry count = 0
+2026-06-01T09:03:38.3266516Z Container spec TerminationMessagePolicy  path 
+2026-06-01T09:03:38.3276889Z Container is terminated. Total time elapsed: 600 ms.
+2026-06-01T09:03:38.3279556Z Site container: urls-backend-app terminated during site startup.
+2026-06-01T09:03:38.3280842Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:02:37, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:03:38.3732172Z Site startup probe failed after 13.5001128 seconds.
+2026-06-01T09:03:38.7168146Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:03:38.7271137Z Failed to start site. Revert by stopping site.
+2026-06-01T09:03:38.7274206Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:03:38.7641485Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:03:38.7641841Z Site: urls-backend-app stopped.
+2026-06-01T09:03:38.8341048Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:03:39.2052577Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T09:03:40.1167812Z Site: urls-backend-app will be blocked for 1 minutes till 06/01/2026 09:04:40
+2026-06-01T09:03:40.1169734Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: urls-backend-app will be blocked for 1 minutes till 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:03:40.1174110Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 09:03:40 (UTC), DetailsLevel: WARN
+2026-06-01T09:03:41.1716874Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 09:03:40 (UTC), DetailsLevel: WARN
+2026-06-01T09:03:46.2268531Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:03:46.2269474Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:03:51.3754665Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:03:51.3755187Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:03:56.5397935Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:03:56.5400395Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:01.7306731Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:01.7307127Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:07.0430153Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:07.0430940Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:08.7749690Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:08.7750029Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:12.4485321Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:12.4489074Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:17.7142433Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:17.7142777Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:28.7364663Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:28.7365017Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:34.0286330Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:34.0286877Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:39.3824276Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:39.3826811Z Start site prohibitted because the site is being blocked.
+2026-06-01T09:04:40.1214578Z Site: urls-backend-app is unblocked.
+2026-06-01T09:04:44.6729606Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:46.7843711Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 09:04:40, DetailsLevel: WARN
+2026-06-01T09:04:46.7917659Z Container start method called.
+2026-06-01T09:04:46.7919404Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:04:46.7931613Z Establishing network.
+2026-06-01T09:04:46.7933657Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T09:04:47.4090899Z Container is starting.
+2026-06-01T09:04:47.4096376Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:04:47.4098033Z Establishing user namespace if not established already.
+2026-06-01T09:04:47.4099423Z Establishing network if not established already.
+2026-06-01T09:04:47.4270210Z Mounting volumes.
+2026-06-01T09:04:47.4360350Z Nested mountpoint 
+2026-06-01T09:04:47.4983659Z Nested mountpoint volatile/logs
+2026-06-01T09:04:47.5332336Z Nested mountpoint 
+2026-06-01T09:04:47.6612174Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T09:04:47.6896977Z Creating container.
+2026-06-01T09:04:47.6904404Z Creating pipes for streaming container io.
+2026-06-01T09:04:47.7267661Z Creating stdout named pipe at /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stdout_e81c9439956047989afebf5507203da4.
+2026-06-01T09:04:47.7282880Z Successfully created stdout named pipe at: /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stdout_e81c9439956047989afebf5507203da4.
+2026-06-01T09:04:47.7284627Z Opening named pipe /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stdout_e81c9439956047989afebf5507203da4 for reading in non-blocking mode.
+2026-06-01T09:04:47.7286201Z Successfully opened named pipe: /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stdout_e81c9439956047989afebf5507203da4.
+2026-06-01T09:04:47.7287326Z Successfully removed non-blocking flag from /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stdout_e81c9439956047989afebf5507203da4.
+2026-06-01T09:04:47.7387833Z Creating stderr named pipe at /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stderr_eece12c400604c0fbbb74bee89295662.
+2026-06-01T09:04:47.7389949Z Successfully created stderr named pipe at: /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stderr_eece12c400604c0fbbb74bee89295662.
+2026-06-01T09:04:47.7391018Z Opening named pipe /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stderr_eece12c400604c0fbbb74bee89295662 for reading in non-blocking mode.
+2026-06-01T09:04:47.7392411Z Successfully opened named pipe: /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stderr_eece12c400604c0fbbb74bee89295662.
+2026-06-01T09:04:47.7393491Z Successfully removed non-blocking flag from /podr/container/pipe/8dfc8112fc5d_urls-backend-app/stderr_eece12c400604c0fbbb74bee89295662.
+2026-06-01T09:04:47.7487186Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T09:04:48.8902637Z Starting container: 8dfc8112fc5d_urls-backend-app.
+2026-06-01T09:04:49.0068244Z Starting watchers and probes.
+2026-06-01T09:04:49.0562493Z Starting metrics collection.
+2026-06-01T09:04:49.0564820Z Container is running.
+2026-06-01T09:04:49.0565768Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:04:49.3102351Z Container start method finished after 2444 ms.
+2026-06-01T09:04:49.3167692Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:04:49.3168122Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T09:07:58.4391599Z Site startup probe succeeded after 189.1094214 seconds.
+2026-06-01T09:07:58.6425125Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 189.1094214 seconds., DetailsLevel: INFO
+2026-06-01T09:07:59.4846787Z Site is running with deployment version: 1017da78-0aba-4986-8efc-c38d4d75e207
+2026-06-01T09:07:59.4860905Z Site started.
+2026-06-01T09:07:59.4864226Z State: Started, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/01/2026 09:07:59 (UTC), DetailsLevel: INFO
+2026-06-01T09:07:59.6293209Z Site is running with patch version JAVA 17.0.17
+2026-06-01T09:08:00.5179221Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T09:08:06.4185897Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T09:08:06.4196483Z Container start method called.
+2026-06-01T09:08:06.4271369Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:08:06.4281458Z Establishing network.
+2026-06-01T09:08:06.4284250Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T09:08:09.3971738Z Container is starting.
+2026-06-01T09:08:09.3973300Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:08:09.3974902Z Establishing user namespace if not established already.
+2026-06-01T09:08:09.3977888Z Establishing network if not established already.
+2026-06-01T09:08:09.3979738Z Mounting volumes.
+2026-06-01T09:08:09.3981578Z Nested mountpoint 
+2026-06-01T09:08:09.5838503Z Nested mountpoint volatile/logs
+2026-06-01T09:08:09.6359943Z Nested mountpoint 
+2026-06-01T09:08:10.1265277Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T09:08:10.1564292Z Creating container.
+2026-06-01T09:08:10.2404632Z Creating pipes for streaming container io.
+2026-06-01T09:08:10.2601400Z Creating stdout named pipe at /podr/container/pipe/07a50a652b3e_urls-backend-app/stdout_7cedc90bc8ca4d1fa3228097bcfdb17c.
+2026-06-01T09:08:10.2619779Z Successfully created stdout named pipe at: /podr/container/pipe/07a50a652b3e_urls-backend-app/stdout_7cedc90bc8ca4d1fa3228097bcfdb17c.
+2026-06-01T09:08:10.2621629Z Opening named pipe /podr/container/pipe/07a50a652b3e_urls-backend-app/stdout_7cedc90bc8ca4d1fa3228097bcfdb17c for reading in non-blocking mode.
+2026-06-01T09:08:10.2623218Z Successfully opened named pipe: /podr/container/pipe/07a50a652b3e_urls-backend-app/stdout_7cedc90bc8ca4d1fa3228097bcfdb17c.
+2026-06-01T09:08:10.2624448Z Successfully removed non-blocking flag from /podr/container/pipe/07a50a652b3e_urls-backend-app/stdout_7cedc90bc8ca4d1fa3228097bcfdb17c.
+2026-06-01T09:08:10.3225906Z Creating stderr named pipe at /podr/container/pipe/07a50a652b3e_urls-backend-app/stderr_b49d6c004b5648d19557996b4858071b.
+2026-06-01T09:08:10.3391037Z Successfully created stderr named pipe at: /podr/container/pipe/07a50a652b3e_urls-backend-app/stderr_b49d6c004b5648d19557996b4858071b.
+2026-06-01T09:08:10.3392633Z Opening named pipe /podr/container/pipe/07a50a652b3e_urls-backend-app/stderr_b49d6c004b5648d19557996b4858071b for reading in non-blocking mode.
+2026-06-01T09:08:10.3394541Z Successfully opened named pipe: /podr/container/pipe/07a50a652b3e_urls-backend-app/stderr_b49d6c004b5648d19557996b4858071b.
+2026-06-01T09:08:10.3395632Z Successfully removed non-blocking flag from /podr/container/pipe/07a50a652b3e_urls-backend-app/stderr_b49d6c004b5648d19557996b4858071b.
+2026-06-01T09:08:10.3589595Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T09:08:14.3634177Z Starting container: 07a50a652b3e_urls-backend-app.
+2026-06-01T09:08:15.0938869Z Starting watchers and probes.
+2026-06-01T09:08:15.1435579Z Starting metrics collection.
+2026-06-01T09:08:15.1438759Z Container is running.
+2026-06-01T09:08:15.1440106Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:08:15.6867829Z Container start method finished after 9266 ms.
+2026-06-01T09:08:15.6870414Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:08:15.6870895Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T09:10:23.3660295Z Site startup probe succeeded after 127.5258398 seconds.
+2026-06-01T09:10:23.5684920Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 127.5258398 seconds., DetailsLevel: INFO
+2026-06-01T09:10:24.4794034Z Site is running with deployment version: 1017da78-0aba-4986-8efc-c38d4d75e207
+2026-06-01T09:10:24.4820593Z Site started.
+2026-06-01T09:10:24.4835498Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/01/2026 09:10:24 (UTC), DetailsLevel: INFO
+2026-06-01T09:10:24.5011049Z Site is running with patch version JAVA 17.0.17
+2026-06-01T09:10:45.7540453Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/01/2026 09:07:59 (UTC), DetailsLevel: INFO
+2026-06-01T09:10:45.7747484Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 09:03:38, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/01/2026 09:07:59 (UTC), DetailsLevel: INFO
+2026-06-01T09:10:45.7926842Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T09:10:47.2623412Z Stop and delete container. Retry count = 0
+2026-06-01T09:10:47.2628822Z Stopping container: 8dfc8112fc5d_urls-backend-app.
+2026-06-01T09:10:48.6870000Z Deleting container: 8dfc8112fc5d_urls-backend-app. Retry count = 0
+2026-06-01T09:10:49.0816039Z Container spec TerminationMessagePolicy  path 
+2026-06-01T09:10:49.0827317Z Container is terminated. Total time elapsed: 3289 ms.
+2026-06-01T09:10:49.0914033Z Site: urls-backend-app stopped.
+2026-06-01T09:13:06.7296237Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T09:13:09.1515166Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T09:13:09.1526654Z Container start method called.
+2026-06-01T09:13:09.1529645Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:13:09.1532302Z Establishing network.
+2026-06-01T09:13:09.1546338Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T09:13:09.7547057Z Container is starting.
+2026-06-01T09:13:09.7622914Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T09:13:09.7630481Z Establishing user namespace if not established already.
+2026-06-01T09:13:09.7634509Z Establishing network if not established already.
+2026-06-01T09:13:09.7638119Z Mounting volumes.
+2026-06-01T09:13:09.7646032Z Nested mountpoint 
+2026-06-01T09:13:09.7956405Z Nested mountpoint volatile/logs
+2026-06-01T09:13:09.8436124Z Nested mountpoint 
+2026-06-01T09:13:10.0274085Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T09:13:10.0674653Z Creating container.
+2026-06-01T09:13:10.0681532Z Creating pipes for streaming container io.
+2026-06-01T09:13:10.0683044Z Creating stdout named pipe at /podr/container/pipe/934499539e4d_urls-backend-app/stdout_076584d9aae040c2a449e74509c3a0d8.
+2026-06-01T09:13:10.0685735Z Successfully created stdout named pipe at: /podr/container/pipe/934499539e4d_urls-backend-app/stdout_076584d9aae040c2a449e74509c3a0d8.
+2026-06-01T09:13:10.0686799Z Opening named pipe /podr/container/pipe/934499539e4d_urls-backend-app/stdout_076584d9aae040c2a449e74509c3a0d8 for reading in non-blocking mode.
+2026-06-01T09:13:10.0856721Z Successfully opened named pipe: /podr/container/pipe/934499539e4d_urls-backend-app/stdout_076584d9aae040c2a449e74509c3a0d8.
+2026-06-01T09:13:10.0873266Z Successfully removed non-blocking flag from /podr/container/pipe/934499539e4d_urls-backend-app/stdout_076584d9aae040c2a449e74509c3a0d8.
+2026-06-01T09:13:10.0960267Z Creating stderr named pipe at /podr/container/pipe/934499539e4d_urls-backend-app/stderr_ace8ba58f30b48e8b06901f825de6c18.
+2026-06-01T09:13:10.0968426Z Successfully created stderr named pipe at: /podr/container/pipe/934499539e4d_urls-backend-app/stderr_ace8ba58f30b48e8b06901f825de6c18.
+2026-06-01T09:13:10.0975333Z Opening named pipe /podr/container/pipe/934499539e4d_urls-backend-app/stderr_ace8ba58f30b48e8b06901f825de6c18 for reading in non-blocking mode.
+2026-06-01T09:13:10.1064598Z Successfully opened named pipe: /podr/container/pipe/934499539e4d_urls-backend-app/stderr_ace8ba58f30b48e8b06901f825de6c18.
+2026-06-01T09:13:10.1067481Z Successfully removed non-blocking flag from /podr/container/pipe/934499539e4d_urls-backend-app/stderr_ace8ba58f30b48e8b06901f825de6c18.
+2026-06-01T09:13:10.1144633Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T09:13:10.7793045Z Starting container: 934499539e4d_urls-backend-app.
+2026-06-01T09:13:10.8995883Z Starting watchers and probes.
+2026-06-01T09:13:10.8999947Z Starting metrics collection.
+2026-06-01T09:13:10.9007251Z Container is running.
+2026-06-01T09:13:10.9008391Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:13:11.1714823Z Container start method finished after 2012 ms.
+2026-06-01T09:13:11.1719418Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T09:13:11.1719735Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO

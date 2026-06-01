@@ -1,0 +1,371 @@
+2026-06-01T08:37:38.6588007Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T08:37:39.3881862Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-01T08:37:39.3884146Z Container start method called.
+2026-06-01T08:37:39.3917135Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:37:39.3918650Z Establishing network.
+2026-06-01T08:37:39.3920220Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T08:37:49.9603299Z Image azure-app-service/java:17.0.17-r260110 is pulled from registry 10.1.0.6:13209
+2026-06-01T08:37:49.9652068Z Container is starting.
+2026-06-01T08:37:49.9681112Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:37:49.9682953Z Establishing user namespace if not established already.
+2026-06-01T08:37:49.9684334Z Establishing network if not established already.
+2026-06-01T08:37:49.9687298Z Mounting volumes.
+2026-06-01T08:37:49.9689693Z Nested mountpoint 
+2026-06-01T08:37:49.9743133Z Nested mountpoint volatile/logs
+2026-06-01T08:37:49.9805827Z Nested mountpoint 
+2026-06-01T08:37:49.9931905Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T08:37:49.9936441Z Creating container.
+2026-06-01T08:37:49.9944073Z Creating pipes for streaming container io.
+2026-06-01T08:37:49.9945152Z Creating stdout named pipe at /podr/container/pipe/9aa2f3095e60_urls-backend-app/stdout_f9b774f55a6249619a84fbf8def247e3.
+2026-06-01T08:37:49.9955784Z Successfully created stdout named pipe at: /podr/container/pipe/9aa2f3095e60_urls-backend-app/stdout_f9b774f55a6249619a84fbf8def247e3.
+2026-06-01T08:37:49.9957606Z Opening named pipe /podr/container/pipe/9aa2f3095e60_urls-backend-app/stdout_f9b774f55a6249619a84fbf8def247e3 for reading in non-blocking mode.
+2026-06-01T08:37:49.9959017Z Successfully opened named pipe: /podr/container/pipe/9aa2f3095e60_urls-backend-app/stdout_f9b774f55a6249619a84fbf8def247e3.
+2026-06-01T08:37:49.9960067Z Successfully removed non-blocking flag from /podr/container/pipe/9aa2f3095e60_urls-backend-app/stdout_f9b774f55a6249619a84fbf8def247e3.
+2026-06-01T08:37:49.9961680Z Creating stderr named pipe at /podr/container/pipe/9aa2f3095e60_urls-backend-app/stderr_de5345395b9e4152a36891d6e6df5980.
+2026-06-01T08:37:49.9963336Z Successfully created stderr named pipe at: /podr/container/pipe/9aa2f3095e60_urls-backend-app/stderr_de5345395b9e4152a36891d6e6df5980.
+2026-06-01T08:37:49.9964296Z Opening named pipe /podr/container/pipe/9aa2f3095e60_urls-backend-app/stderr_de5345395b9e4152a36891d6e6df5980 for reading in non-blocking mode.
+2026-06-01T08:37:49.9965646Z Successfully opened named pipe: /podr/container/pipe/9aa2f3095e60_urls-backend-app/stderr_de5345395b9e4152a36891d6e6df5980.
+2026-06-01T08:37:50.0033901Z Successfully removed non-blocking flag from /podr/container/pipe/9aa2f3095e60_urls-backend-app/stderr_de5345395b9e4152a36891d6e6df5980.
+2026-06-01T08:37:50.0039055Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T08:37:50.4776678Z Starting container: 9aa2f3095e60_urls-backend-app.
+2026-06-01T08:37:50.5039736Z Starting watchers and probes.
+2026-06-01T08:37:50.5062466Z Starting metrics collection.
+2026-06-01T08:37:50.5064380Z Container is running.
+2026-06-01T08:37:50.5065396Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:37:50.5477242Z Container start method finished after 11158 ms.
+2026-06-01T08:37:50.5483173Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:37:50.5539027Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T08:37:52.7909042Z Container has finished running with exit code: 0.
+2026-06-01T08:37:52.7960421Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T08:37:52.8052681Z Stop and delete container. Retry count = 0
+2026-06-01T08:37:52.8063284Z Stopping container: 9aa2f3095e60_urls-backend-app.
+2026-06-01T08:37:52.8535696Z Deleting container: 9aa2f3095e60_urls-backend-app. Retry count = 0
+2026-06-01T08:37:52.9937652Z Container spec TerminationMessagePolicy  path 
+2026-06-01T08:37:52.9958206Z Container is terminated. Total time elapsed: 198 ms.
+2026-06-01T08:37:52.9960396Z Site container: urls-backend-app terminated during site startup.
+2026-06-01T08:37:52.9971553Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:37:53.0684731Z Site startup probe failed after 2.4920484 seconds.
+2026-06-01T08:37:53.1408375Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:37:53.1462408Z Failed to start site. Revert by stopping site.
+2026-06-01T08:37:53.1505047Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:37:53.1537697Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:37:53.1548629Z Site: urls-backend-app stopped.
+2026-06-01T08:37:53.1673144Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:37:53.2388868Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:37:53.3119382Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:37:53 (UTC), DetailsLevel: ERR
+2026-06-01T08:37:53.5551150Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:37:53 (UTC), DetailsLevel: ERR
+2026-06-01T08:38:02.5696645Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:37:53 (UTC), DetailsLevel: ERR
+2026-06-01T08:38:02.8403696Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:37:53 (UTC), DetailsLevel: ERR
+2026-06-01T08:38:02.8405438Z Container start method called.
+2026-06-01T08:38:02.8406368Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:38:02.8408409Z Establishing network.
+2026-06-01T08:38:02.8409856Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T08:38:02.9376394Z Container is starting.
+2026-06-01T08:38:02.9377641Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:38:02.9379764Z Establishing user namespace if not established already.
+2026-06-01T08:38:02.9381595Z Establishing network if not established already.
+2026-06-01T08:38:02.9383476Z Mounting volumes.
+2026-06-01T08:38:02.9385501Z Nested mountpoint 
+2026-06-01T08:38:02.9430000Z Nested mountpoint volatile/logs
+2026-06-01T08:38:02.9537199Z Nested mountpoint 
+2026-06-01T08:38:02.9608961Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T08:38:02.9610950Z Creating container.
+2026-06-01T08:38:02.9615236Z Creating pipes for streaming container io.
+2026-06-01T08:38:02.9620582Z Creating stdout named pipe at /podr/container/pipe/eab651308ca8_urls-backend-app/stdout_3d1eeded95e64673b6d57f824dd13042.
+2026-06-01T08:38:02.9629241Z Successfully created stdout named pipe at: /podr/container/pipe/eab651308ca8_urls-backend-app/stdout_3d1eeded95e64673b6d57f824dd13042.
+2026-06-01T08:38:02.9633653Z Opening named pipe /podr/container/pipe/eab651308ca8_urls-backend-app/stdout_3d1eeded95e64673b6d57f824dd13042 for reading in non-blocking mode.
+2026-06-01T08:38:02.9637025Z Successfully opened named pipe: /podr/container/pipe/eab651308ca8_urls-backend-app/stdout_3d1eeded95e64673b6d57f824dd13042.
+2026-06-01T08:38:02.9638428Z Successfully removed non-blocking flag from /podr/container/pipe/eab651308ca8_urls-backend-app/stdout_3d1eeded95e64673b6d57f824dd13042.
+2026-06-01T08:38:02.9647201Z Creating stderr named pipe at /podr/container/pipe/eab651308ca8_urls-backend-app/stderr_c622ef1af58b4de48d41b40ff28e5e4f.
+2026-06-01T08:38:02.9649416Z Successfully created stderr named pipe at: /podr/container/pipe/eab651308ca8_urls-backend-app/stderr_c622ef1af58b4de48d41b40ff28e5e4f.
+2026-06-01T08:38:02.9651334Z Opening named pipe /podr/container/pipe/eab651308ca8_urls-backend-app/stderr_c622ef1af58b4de48d41b40ff28e5e4f for reading in non-blocking mode.
+2026-06-01T08:38:02.9653965Z Successfully opened named pipe: /podr/container/pipe/eab651308ca8_urls-backend-app/stderr_c622ef1af58b4de48d41b40ff28e5e4f.
+2026-06-01T08:38:02.9655413Z Successfully removed non-blocking flag from /podr/container/pipe/eab651308ca8_urls-backend-app/stderr_c622ef1af58b4de48d41b40ff28e5e4f.
+2026-06-01T08:38:02.9671558Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T08:38:03.1542919Z Starting container: eab651308ca8_urls-backend-app.
+2026-06-01T08:38:03.1748034Z Starting watchers and probes.
+2026-06-01T08:38:03.1759075Z Starting metrics collection.
+2026-06-01T08:38:03.1761310Z Container is running.
+2026-06-01T08:38:03.1762473Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:38:03.2025744Z Container start method finished after 361 ms.
+2026-06-01T08:38:03.2028879Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:38:03.2029191Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T08:38:04.6041984Z Container has finished running with exit code: 0.
+2026-06-01T08:38:04.6043348Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T08:38:04.6047742Z Stop and delete container. Retry count = 0
+2026-06-01T08:38:04.6049002Z Stopping container: eab651308ca8_urls-backend-app.
+2026-06-01T08:38:04.8546431Z Deleting container: eab651308ca8_urls-backend-app. Retry count = 0
+2026-06-01T08:38:05.2938034Z Container spec TerminationMessagePolicy  path 
+2026-06-01T08:38:05.2940282Z Container is terminated. Total time elapsed: 689 ms.
+2026-06-01T08:38:05.2941646Z Site container: urls-backend-app terminated during site startup.
+2026-06-01T08:38:05.2942420Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:37:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:38:05.2962271Z Site startup probe failed after 2.0921234 seconds.
+2026-06-01T08:38:05.3627136Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:38:05.3659462Z Failed to start site. Revert by stopping site.
+2026-06-01T08:38:05.3661385Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:38:05.3776231Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:38:05.3776553Z Site: urls-backend-app stopped.
+2026-06-01T08:38:05.3807653Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:38:05.4450994Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:38:05.5182123Z Site: urls-backend-app will be blocked for 1 minutes till 06/01/2026 08:39:05
+2026-06-01T08:38:05.5184696Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: urls-backend-app will be blocked for 1 minutes till 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:05.5269169Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:38:05 (UTC), DetailsLevel: WARN
+2026-06-01T08:38:05.6658013Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:38:05 (UTC), DetailsLevel: WARN
+2026-06-01T08:38:10.7248327Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:10.7248755Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:15.8389290Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:15.8389662Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:20.8906806Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:20.8907149Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:25.9450210Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:25.9450483Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:31.0065982Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:31.0066312Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:36.0864720Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:36.0865029Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:41.3616383Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:41.3616971Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:46.4310468Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:46.4310778Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:51.4848441Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:51.4848749Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:38:56.5272434Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:38:56.5272745Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:01.5848429Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:39:01.5848737Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:05.5188456Z Site: urls-backend-app is unblocked.
+2026-06-01T08:39:06.6436539Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:39:06.9955857Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:39:05, DetailsLevel: WARN
+2026-06-01T08:39:06.9957274Z Container start method called.
+2026-06-01T08:39:06.9957759Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:39:06.9981443Z Establishing network.
+2026-06-01T08:39:06.9983380Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T08:39:07.1011005Z Container is starting.
+2026-06-01T08:39:07.1012067Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:39:07.1013495Z Establishing user namespace if not established already.
+2026-06-01T08:39:07.1014762Z Establishing network if not established already.
+2026-06-01T08:39:07.1016495Z Mounting volumes.
+2026-06-01T08:39:07.1018903Z Nested mountpoint 
+2026-06-01T08:39:07.1059742Z Nested mountpoint volatile/logs
+2026-06-01T08:39:07.1165091Z Nested mountpoint 
+2026-06-01T08:39:07.1227407Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T08:39:07.1232756Z Creating container.
+2026-06-01T08:39:07.1236470Z Creating pipes for streaming container io.
+2026-06-01T08:39:07.1238243Z Creating stdout named pipe at /podr/container/pipe/2a19fb431517_urls-backend-app/stdout_33aa3b999c294f179291057c74f43c1b.
+2026-06-01T08:39:07.1240673Z Successfully created stdout named pipe at: /podr/container/pipe/2a19fb431517_urls-backend-app/stdout_33aa3b999c294f179291057c74f43c1b.
+2026-06-01T08:39:07.1242279Z Opening named pipe /podr/container/pipe/2a19fb431517_urls-backend-app/stdout_33aa3b999c294f179291057c74f43c1b for reading in non-blocking mode.
+2026-06-01T08:39:07.1243872Z Successfully opened named pipe: /podr/container/pipe/2a19fb431517_urls-backend-app/stdout_33aa3b999c294f179291057c74f43c1b.
+2026-06-01T08:39:07.1245412Z Successfully removed non-blocking flag from /podr/container/pipe/2a19fb431517_urls-backend-app/stdout_33aa3b999c294f179291057c74f43c1b.
+2026-06-01T08:39:07.1263315Z Creating stderr named pipe at /podr/container/pipe/2a19fb431517_urls-backend-app/stderr_ec4f81e71e264ba19b2dcd69a13fd2fc.
+2026-06-01T08:39:07.1267001Z Successfully created stderr named pipe at: /podr/container/pipe/2a19fb431517_urls-backend-app/stderr_ec4f81e71e264ba19b2dcd69a13fd2fc.
+2026-06-01T08:39:07.1269959Z Opening named pipe /podr/container/pipe/2a19fb431517_urls-backend-app/stderr_ec4f81e71e264ba19b2dcd69a13fd2fc for reading in non-blocking mode.
+2026-06-01T08:39:07.1273458Z Successfully opened named pipe: /podr/container/pipe/2a19fb431517_urls-backend-app/stderr_ec4f81e71e264ba19b2dcd69a13fd2fc.
+2026-06-01T08:39:07.1282324Z Successfully removed non-blocking flag from /podr/container/pipe/2a19fb431517_urls-backend-app/stderr_ec4f81e71e264ba19b2dcd69a13fd2fc.
+2026-06-01T08:39:07.1287338Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T08:39:07.5959830Z Starting container: 2a19fb431517_urls-backend-app.
+2026-06-01T08:39:07.6145876Z Starting watchers and probes.
+2026-06-01T08:39:07.6155081Z Starting metrics collection.
+2026-06-01T08:39:07.6156971Z Container is running.
+2026-06-01T08:39:07.6157788Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:39:07.6339710Z Container start method finished after 637 ms.
+2026-06-01T08:39:07.6348980Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:39:07.6349579Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T08:39:09.1650888Z Container has finished running with exit code: 0.
+2026-06-01T08:39:09.1655388Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T08:39:09.1660016Z Stop and delete container. Retry count = 0
+2026-06-01T08:39:09.1662432Z Stopping container: 2a19fb431517_urls-backend-app.
+2026-06-01T08:39:09.1861024Z Deleting container: 2a19fb431517_urls-backend-app. Retry count = 0
+2026-06-01T08:39:09.2935131Z Container spec TerminationMessagePolicy  path 
+2026-06-01T08:39:09.2937293Z Container is terminated. Total time elapsed: 128 ms.
+2026-06-01T08:39:09.2939850Z Site container: urls-backend-app terminated during site startup.
+2026-06-01T08:39:09.2940948Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:38:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:39:09.2963225Z Site startup probe failed after 1.6599617 seconds.
+2026-06-01T08:39:09.3633012Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:39:09.3651701Z Failed to start site. Revert by stopping site.
+2026-06-01T08:39:09.3652978Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:39:09.3670397Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:39:09.3670587Z Site: urls-backend-app stopped.
+2026-06-01T08:39:09.3705569Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:39:09.4171363Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:39:09.4877842Z Site: urls-backend-app will be blocked for 1 minutes till 06/01/2026 08:40:09
+2026-06-01T08:39:09.4880277Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: urls-backend-app will be blocked for 1 minutes till 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:09.4884328Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:39:09 (UTC), DetailsLevel: WARN
+2026-06-01T08:39:09.6372738Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:39:09 (UTC), DetailsLevel: WARN
+2026-06-01T08:39:14.6789421Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:14.6789745Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:19.7455898Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:19.7456209Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:24.8073660Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:24.8073975Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:29.8573873Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:29.8574166Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:34.9224292Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:34.9224568Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:39.9779098Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:39.9783699Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:45.0444795Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:45.0445100Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:50.0944945Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:50.0945250Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:39:55.1524394Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:39:55.1524704Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:00.2038756Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:40:00.2039062Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:05.2654773Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:40:05.2655106Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:09.4884712Z Site: urls-backend-app is unblocked.
+2026-06-01T08:40:10.3053756Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:40:10.7846802Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:40:09, DetailsLevel: WARN
+2026-06-01T08:40:10.7848878Z Container start method called.
+2026-06-01T08:40:10.7849456Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:40:10.7851406Z Establishing network.
+2026-06-01T08:40:10.7854129Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T08:40:10.8570835Z Container is starting.
+2026-06-01T08:40:10.8571681Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:40:10.8572669Z Establishing user namespace if not established already.
+2026-06-01T08:40:10.8574547Z Establishing network if not established already.
+2026-06-01T08:40:10.8576284Z Mounting volumes.
+2026-06-01T08:40:10.8578212Z Nested mountpoint 
+2026-06-01T08:40:10.8614265Z Nested mountpoint volatile/logs
+2026-06-01T08:40:10.8669197Z Nested mountpoint 
+2026-06-01T08:40:10.8710987Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T08:40:10.8713078Z Creating container.
+2026-06-01T08:40:10.8715547Z Creating pipes for streaming container io.
+2026-06-01T08:40:10.8717254Z Creating stdout named pipe at /podr/container/pipe/92edc12ae533_urls-backend-app/stdout_08163c9cc83447bd81d2de9867ede508.
+2026-06-01T08:40:10.8720030Z Successfully created stdout named pipe at: /podr/container/pipe/92edc12ae533_urls-backend-app/stdout_08163c9cc83447bd81d2de9867ede508.
+2026-06-01T08:40:10.8741676Z Opening named pipe /podr/container/pipe/92edc12ae533_urls-backend-app/stdout_08163c9cc83447bd81d2de9867ede508 for reading in non-blocking mode.
+2026-06-01T08:40:10.8743587Z Successfully opened named pipe: /podr/container/pipe/92edc12ae533_urls-backend-app/stdout_08163c9cc83447bd81d2de9867ede508.
+2026-06-01T08:40:10.8744902Z Successfully removed non-blocking flag from /podr/container/pipe/92edc12ae533_urls-backend-app/stdout_08163c9cc83447bd81d2de9867ede508.
+2026-06-01T08:40:10.8747945Z Creating stderr named pipe at /podr/container/pipe/92edc12ae533_urls-backend-app/stderr_716f34e568bf42a997e3f3a99f9b580e.
+2026-06-01T08:40:10.8749831Z Successfully created stderr named pipe at: /podr/container/pipe/92edc12ae533_urls-backend-app/stderr_716f34e568bf42a997e3f3a99f9b580e.
+2026-06-01T08:40:10.8752915Z Opening named pipe /podr/container/pipe/92edc12ae533_urls-backend-app/stderr_716f34e568bf42a997e3f3a99f9b580e for reading in non-blocking mode.
+2026-06-01T08:40:10.8771810Z Successfully opened named pipe: /podr/container/pipe/92edc12ae533_urls-backend-app/stderr_716f34e568bf42a997e3f3a99f9b580e.
+2026-06-01T08:40:10.8773652Z Successfully removed non-blocking flag from /podr/container/pipe/92edc12ae533_urls-backend-app/stderr_716f34e568bf42a997e3f3a99f9b580e.
+2026-06-01T08:40:10.8775369Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T08:40:11.8391741Z Starting container: 92edc12ae533_urls-backend-app.
+2026-06-01T08:40:11.8613483Z Starting watchers and probes.
+2026-06-01T08:40:11.8616274Z Starting metrics collection.
+2026-06-01T08:40:11.8618265Z Container is running.
+2026-06-01T08:40:11.8619560Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:40:11.8743467Z Container start method finished after 1089 ms.
+2026-06-01T08:40:11.8745650Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:40:11.8746344Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T08:40:12.6857748Z Container has finished running with exit code: 0.
+2026-06-01T08:40:12.6859941Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T08:40:12.6868486Z Stop and delete container. Retry count = 0
+2026-06-01T08:40:12.6870122Z Stopping container: 92edc12ae533_urls-backend-app.
+2026-06-01T08:40:12.7017075Z Deleting container: 92edc12ae533_urls-backend-app. Retry count = 0
+2026-06-01T08:40:13.3806426Z Container spec TerminationMessagePolicy  path 
+2026-06-01T08:40:13.3808670Z Container is terminated. Total time elapsed: 694 ms.
+2026-06-01T08:40:13.3811363Z Site container: urls-backend-app terminated during site startup.
+2026-06-01T08:40:13.3812146Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:39:09, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:40:13.3825358Z Site startup probe failed after 1.5075413 seconds.
+2026-06-01T08:40:13.4432925Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:40:13.4452121Z Failed to start site. Revert by stopping site.
+2026-06-01T08:40:13.4453514Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:40:13.4455598Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:40:13.4455777Z Site: urls-backend-app stopped.
+2026-06-01T08:40:13.4489358Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:40:13.5103745Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:40:13.5828886Z Site: urls-backend-app will be blocked for 2 minutes till 06/01/2026 08:42:13
+2026-06-01T08:40:13.5831624Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: urls-backend-app will be blocked for 2 minutes till 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:13.5855970Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:40:13 (UTC), DetailsLevel: WARN
+2026-06-01T08:40:13.7429775Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/01/2026 08:40:13 (UTC), DetailsLevel: WARN
+2026-06-01T08:40:18.7808980Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:18.7809249Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:23.8189234Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:23.8189823Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:28.8824139Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:28.8824642Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:33.9536014Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:33.9536310Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:39.0279256Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:39.0279604Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:44.0850944Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:44.0851247Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:49.1391910Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:49.1392258Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:54.1822822Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:54.1823271Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:40:59.2392172Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:40:59.2392459Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:04.2782002Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:04.2782322Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:09.3216089Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:09.3216566Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:14.3641062Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:14.3641383Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:19.4013117Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:19.4013425Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:24.4462129Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:24.4462606Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:29.4811268Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:29.4811582Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:34.5327320Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:34.5327747Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:39.5785739Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:39.5786178Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:44.6327111Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:44.6327446Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:49.7291928Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:49.7292545Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:54.8179729Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:54.8180076Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:41:59.8625587Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:41:59.8628162Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:42:04.9168928Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:42:04.9169342Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:42:10.0659475Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:42:10.0660027Z Start site prohibitted because the site is being blocked.
+2026-06-01T08:42:13.5911604Z Site: urls-backend-app is unblocked.
+2026-06-01T08:42:15.2955845Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:42:18.0331200Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/01/2026 08:42:13, DetailsLevel: WARN
+2026-06-01T08:42:18.0374629Z Container start method called.
+2026-06-01T08:42:18.0654330Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110 for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:42:18.0656423Z Establishing network.
+2026-06-01T08:42:18.0659248Z Pulling image: azure-app-service/java:17.0.17-r260110.
+2026-06-01T08:42:18.7302796Z Container is starting.
+2026-06-01T08:42:18.7304012Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for urls-backend-app., DetailsLevel: INFO
+2026-06-01T08:42:18.7305049Z Establishing user namespace if not established already.
+2026-06-01T08:42:18.7310002Z Establishing network if not established already.
+2026-06-01T08:42:18.7312709Z Mounting volumes.
+2026-06-01T08:42:18.7316699Z Nested mountpoint 
+2026-06-01T08:42:18.7353374Z Nested mountpoint volatile/logs
+2026-06-01T08:42:18.7674115Z Nested mountpoint 
+2026-06-01T08:42:18.8449544Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for urls-backend-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-01T08:42:18.8504172Z Creating container.
+2026-06-01T08:42:18.8505916Z Creating pipes for streaming container io.
+2026-06-01T08:42:18.8508639Z Creating stdout named pipe at /podr/container/pipe/6732437dc579_urls-backend-app/stdout_df30fd1e0c98433b98f2ad17f45dbe92.
+2026-06-01T08:42:18.8511098Z Successfully created stdout named pipe at: /podr/container/pipe/6732437dc579_urls-backend-app/stdout_df30fd1e0c98433b98f2ad17f45dbe92.
+2026-06-01T08:42:18.8512648Z Opening named pipe /podr/container/pipe/6732437dc579_urls-backend-app/stdout_df30fd1e0c98433b98f2ad17f45dbe92 for reading in non-blocking mode.
+2026-06-01T08:42:18.8665492Z Successfully opened named pipe: /podr/container/pipe/6732437dc579_urls-backend-app/stdout_df30fd1e0c98433b98f2ad17f45dbe92.
+2026-06-01T08:42:18.8668254Z Successfully removed non-blocking flag from /podr/container/pipe/6732437dc579_urls-backend-app/stdout_df30fd1e0c98433b98f2ad17f45dbe92.
+2026-06-01T08:42:18.8707350Z Creating stderr named pipe at /podr/container/pipe/6732437dc579_urls-backend-app/stderr_b64f29c4ab6e4688b2ac003141f25e3e.
+2026-06-01T08:42:18.8709684Z Successfully created stderr named pipe at: /podr/container/pipe/6732437dc579_urls-backend-app/stderr_b64f29c4ab6e4688b2ac003141f25e3e.
+2026-06-01T08:42:18.8711071Z Opening named pipe /podr/container/pipe/6732437dc579_urls-backend-app/stderr_b64f29c4ab6e4688b2ac003141f25e3e for reading in non-blocking mode.
+2026-06-01T08:42:18.8713609Z Successfully opened named pipe: /podr/container/pipe/6732437dc579_urls-backend-app/stderr_b64f29c4ab6e4688b2ac003141f25e3e.
+2026-06-01T08:42:18.8715882Z Successfully removed non-blocking flag from /podr/container/pipe/6732437dc579_urls-backend-app/stderr_b64f29c4ab6e4688b2ac003141f25e3e.
+2026-06-01T08:42:18.8717884Z Creating container with image: azure-app-service/java:17.0.17-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:17.0.17-r260110
+2026-06-01T08:42:19.3613262Z Starting container: 6732437dc579_urls-backend-app.
+2026-06-01T08:42:19.4199706Z Starting watchers and probes.
+2026-06-01T08:42:19.4202907Z Starting metrics collection.
+2026-06-01T08:42:19.4204922Z Container is running.
+2026-06-01T08:42:19.4207023Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:42:19.4660273Z Container start method finished after 1428 ms.
+2026-06-01T08:42:19.4662434Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container urls-backend-app successfully created and is running., DetailsLevel: INFO
+2026-06-01T08:42:19.4662726Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-01T08:42:21.4386368Z Container has finished running with exit code: 0.
+2026-06-01T08:42:21.4388065Z Container is terminating. Grace period: 5 seconds.
+2026-06-01T08:42:21.4392212Z Stop and delete container. Retry count = 0
+2026-06-01T08:42:21.4393403Z Stopping container: 6732437dc579_urls-backend-app.
+2026-06-01T08:42:21.4656398Z Deleting container: 6732437dc579_urls-backend-app. Retry count = 0
+2026-06-01T08:42:21.5542413Z Container spec TerminationMessagePolicy  path 
+2026-06-01T08:42:21.5546012Z Container is terminated. Total time elapsed: 115 ms.
+2026-06-01T08:42:21.5547799Z Site container: urls-backend-app terminated during site startup.
+2026-06-01T08:42:21.5549125Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:40:13, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:42:21.5589227Z Site startup probe failed after 2.090192 seconds.
+2026-06-01T08:42:21.6253454Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:42:21, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:42:21.6269517Z Failed to start site. Revert by stopping site.
+2026-06-01T08:42:21.6270631Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:42:21, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:42:21.6285851Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/01/2026 08:42:21, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: urls-backend-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-01T08:42:21.6286065Z Site: urls-backend-app stopped.
