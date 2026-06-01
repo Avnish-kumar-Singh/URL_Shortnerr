@@ -52,6 +52,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
 
 function App() {
 
@@ -70,7 +71,7 @@ function App() {
 
 
       const response = await axios.get(
-        "http://localhost:8080/all"
+        `${API_BASE_URL}/all`
       );
 
 
@@ -96,7 +97,7 @@ function App() {
 
 
     const response = await axios.get(
-      `http://localhost:8080/search?keyword=${searchKeyword}`
+      `${API_BASE_URL}/search?keyword=${searchKeyword}`
     );
 
 
@@ -131,7 +132,7 @@ function App() {
 
 
       const response = await axios.post(
-        "http://localhost:8080/shorten",
+        `${API_BASE_URL}/shorten`,
         {
           url: url
         },
@@ -175,35 +176,57 @@ function App() {
   alert("Short URL copied successfully!");
 };
 
+// 
+// const deleteUrl = async (id) => {
+// 
+// 
+  // try {
+// 
+// 
+    // await axios.delete(
+        // `${API_BASE_URL}/delete/${id}`
+// 
+// 
+    // fetchUrls();
+// 
+// 
+  // } catch (error) {
+// 
+// 
+    // console.error(error);
+// 
+// 
+    // alert("Delete failed");
+// 
+// 
+  // }
+// 
+// 
+// };
+// 
+
+
+
 
 const deleteUrl = async (id) => {
 
-
   try {
 
-
     await axios.delete(
-      `http://localhost:8080/delete/${id}`
+      `${API_BASE_URL}/delete/${id}`
     );
-
 
     fetchUrls();
 
-
   } catch (error) {
-
 
     console.error(error);
 
-
     alert("Delete failed");
-
 
   }
 
-
 };
-
 
   return (
 
@@ -413,7 +436,7 @@ const deleteUrl = async (id) => {
 
 
                     <a
-                      href={`http://localhost:8080/${item.shortCode}`}
+                      href={`${API_BASE_URL}/${item.shortCode}`}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -429,7 +452,7 @@ const deleteUrl = async (id) => {
 
                     <td>
                       <a
-                        href={`http://localhost:8080/qr/${item.shortCode}`}
+                        href={`${API_BASE_URL}/qr/${item.shortCode}`}
                         target="_blank"
                         rel="noreferrer"
                         style={{
