@@ -52,7 +52,22 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://urls-backend-app-gmfseyhpcjbnhmhc.southeastasia-01.azurewebsites.net";
+const DEFAULT_API_BASE_URL = "https://urls-backend-app-gmfseyhpcjbnhmhc.southeastasia-01.azurewebsites.net";
+
+const normalizeApiBaseUrl = (url) => {
+  if (!url) {
+    return DEFAULT_API_BASE_URL;
+  }
+
+  let normalized = url.trim().replace(/\/+$|\s+/g, "");
+  if (!/^https?:\/\//i.test(normalized)) {
+    normalized = `https://${normalized}`;
+  }
+
+  return normalized.replace(/\/+$/, "");
+};
+
+const API_BASE_URL = normalizeApiBaseUrl(import.meta.env.VITE_API_BASE_URL || DEFAULT_API_BASE_URL);
 
 function App() {
 
